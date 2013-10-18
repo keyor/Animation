@@ -207,6 +207,28 @@
 		17B0B3011801354200A5FE74 /* HttpClient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 17B0B3001801354200A5FE74 /* HttpClient.cpp */; };
 		17B0B30A1801354300A5FE74 /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 17B0B3091801354300A5FE74 /* AppDelegate.cpp */; };
 		17B0B30D1801354300A5FE74 /* HelloWorldScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 17B0B30C1801354300A5FE74 /* HelloWorldScene.cpp */; };
+		17B0B321180135C400A5FE74 /* grossini_dance_01.png in Resources */ = {isa = PBXBuildFile; fileRef = 17B0B313180135C400A5FE74 /* grossini_dance_01.png */; };
+		17B0B322180135C400A5FE74 /* grossini_dance_02.png in Resources */ = {isa = PBXBuildFile; fileRef = 17B0B314180135C400A5FE74 /* grossini_dance_02.png */; };
+		17B0B323180135C400A5FE74 /* grossini_dance_03.png in Resources */ = {isa = PBXBuildFile; fileRef = 17B0B315180135C400A5FE74 /* grossini_dance_03.png */; };
+		17B0B324180135C400A5FE74 /* grossini_dance_04.png in Resources */ = {isa = PBXBuildFile; fileRef = 17B0B316180135C400A5FE74 /* grossini_dance_04.png */; };
+		17B0B325180135C400A5FE74 /* grossini_dance_05.png in Resources */ = {isa = PBXBuildFile; fileRef = 17B0B317180135C400A5FE74 /* grossini_dance_05.png */; };
+		17B0B326180135C400A5FE74 /* grossini_dance_06.png in Resources */ = {isa = PBXBuildFile; fileRef = 17B0B318180135C400A5FE74 /* grossini_dance_06.png */; };
+		17B0B327180135C400A5FE74 /* grossini_dance_07.png in Resources */ = {isa = PBXBuildFile; fileRef = 17B0B319180135C400A5FE74 /* grossini_dance_07.png */; };
+		17B0B328180135C400A5FE74 /* grossini_dance_08.png in Resources */ = {isa = PBXBuildFile; fileRef = 17B0B31A180135C400A5FE74 /* grossini_dance_08.png */; };
+		17B0B329180135C400A5FE74 /* grossini_dance_09.png in Resources */ = {isa = PBXBuildFile; fileRef = 17B0B31B180135C400A5FE74 /* grossini_dance_09.png */; };
+		17B0B32A180135C400A5FE74 /* grossini_dance_10.png in Resources */ = {isa = PBXBuildFile; fileRef = 17B0B31C180135C400A5FE74 /* grossini_dance_10.png */; };
+		17B0B32B180135C400A5FE74 /* grossini_dance_11.png in Resources */ = {isa = PBXBuildFile; fileRef = 17B0B31D180135C400A5FE74 /* grossini_dance_11.png */; };
+		17B0B32C180135C400A5FE74 /* grossini_dance_12.png in Resources */ = {isa = PBXBuildFile; fileRef = 17B0B31E180135C400A5FE74 /* grossini_dance_12.png */; };
+		17B0B32D180135C400A5FE74 /* grossini_dance_13.png in Resources */ = {isa = PBXBuildFile; fileRef = 17B0B31F180135C400A5FE74 /* grossini_dance_13.png */; };
+		17B0B32E180135C400A5FE74 /* grossini_dance_14.png in Resources */ = {isa = PBXBuildFile; fileRef = 17B0B320180135C400A5FE74 /* grossini_dance_14.png */; };
+		17B0B3301801400300A5FE74 /* grossini_dance_atlas_nomipmap.png in Resources */ = {isa = PBXBuildFile; fileRef = 17B0B32F1801400300A5FE74 /* grossini_dance_atlas_nomipmap.png */; };
+		17B0B3331801487400A5FE74 /* grossini.plist in Resources */ = {isa = PBXBuildFile; fileRef = 17B0B3311801487300A5FE74 /* grossini.plist */; };
+		17B0B3341801487400A5FE74 /* grossini.png in Resources */ = {isa = PBXBuildFile; fileRef = 17B0B3321801487300A5FE74 /* grossini.png */; };
+		17B0B336180150F400A5FE74 /* grossini_blue.plist in Resources */ = {isa = PBXBuildFile; fileRef = 17B0B335180150F400A5FE74 /* grossini_blue.plist */; };
+		17B0B3381801515000A5FE74 /* animations.plist in Resources */ = {isa = PBXBuildFile; fileRef = 17B0B3371801515000A5FE74 /* animations.plist */; };
+		17B0B33A1801515A00A5FE74 /* grossini_blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 17B0B3391801515A00A5FE74 /* grossini_blue.png */; };
+		17B0B33D1801516700A5FE74 /* grossini_gray.plist in Resources */ = {isa = PBXBuildFile; fileRef = 17B0B33B1801516600A5FE74 /* grossini_gray.plist */; };
+		17B0B33E1801516700A5FE74 /* grossini_gray.png in Resources */ = {isa = PBXBuildFile; fileRef = 17B0B33C1801516700A5FE74 /* grossini_gray.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -650,6 +672,28 @@
 		17B0B3091801354300A5FE74 /* AppDelegate.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = AppDelegate.cpp; path = Classes/AppDelegate.cpp; sourceTree = "<group>"; };
 		17B0B30B1801354300A5FE74 /* HelloWorldScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HelloWorldScene.h; path = Classes/HelloWorldScene.h; sourceTree = "<group>"; };
 		17B0B30C1801354300A5FE74 /* HelloWorldScene.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = HelloWorldScene.cpp; path = Classes/HelloWorldScene.cpp; sourceTree = "<group>"; };
+		17B0B313180135C400A5FE74 /* grossini_dance_01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grossini_dance_01.png; sourceTree = "<group>"; };
+		17B0B314180135C400A5FE74 /* grossini_dance_02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grossini_dance_02.png; sourceTree = "<group>"; };
+		17B0B315180135C400A5FE74 /* grossini_dance_03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grossini_dance_03.png; sourceTree = "<group>"; };
+		17B0B316180135C400A5FE74 /* grossini_dance_04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grossini_dance_04.png; sourceTree = "<group>"; };
+		17B0B317180135C400A5FE74 /* grossini_dance_05.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grossini_dance_05.png; sourceTree = "<group>"; };
+		17B0B318180135C400A5FE74 /* grossini_dance_06.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grossini_dance_06.png; sourceTree = "<group>"; };
+		17B0B319180135C400A5FE74 /* grossini_dance_07.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grossini_dance_07.png; sourceTree = "<group>"; };
+		17B0B31A180135C400A5FE74 /* grossini_dance_08.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grossini_dance_08.png; sourceTree = "<group>"; };
+		17B0B31B180135C400A5FE74 /* grossini_dance_09.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grossini_dance_09.png; sourceTree = "<group>"; };
+		17B0B31C180135C400A5FE74 /* grossini_dance_10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grossini_dance_10.png; sourceTree = "<group>"; };
+		17B0B31D180135C400A5FE74 /* grossini_dance_11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grossini_dance_11.png; sourceTree = "<group>"; };
+		17B0B31E180135C400A5FE74 /* grossini_dance_12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grossini_dance_12.png; sourceTree = "<group>"; };
+		17B0B31F180135C400A5FE74 /* grossini_dance_13.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grossini_dance_13.png; sourceTree = "<group>"; };
+		17B0B320180135C400A5FE74 /* grossini_dance_14.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grossini_dance_14.png; sourceTree = "<group>"; };
+		17B0B32F1801400300A5FE74 /* grossini_dance_atlas_nomipmap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grossini_dance_atlas_nomipmap.png; sourceTree = "<group>"; };
+		17B0B3311801487300A5FE74 /* grossini.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = grossini.plist; sourceTree = "<group>"; };
+		17B0B3321801487300A5FE74 /* grossini.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grossini.png; sourceTree = "<group>"; };
+		17B0B335180150F400A5FE74 /* grossini_blue.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = grossini_blue.plist; sourceTree = "<group>"; };
+		17B0B3371801515000A5FE74 /* animations.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = animations.plist; sourceTree = "<group>"; };
+		17B0B3391801515A00A5FE74 /* grossini_blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grossini_blue.png; sourceTree = "<group>"; };
+		17B0B33B1801516600A5FE74 /* grossini_gray.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = grossini_gray.plist; sourceTree = "<group>"; };
+		17B0B33C1801516700A5FE74 /* grossini_gray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grossini_gray.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -719,6 +763,28 @@
 		17B0B06B1801353E00A5FE74 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				17B0B33B1801516600A5FE74 /* grossini_gray.plist */,
+				17B0B33C1801516700A5FE74 /* grossini_gray.png */,
+				17B0B3391801515A00A5FE74 /* grossini_blue.png */,
+				17B0B3371801515000A5FE74 /* animations.plist */,
+				17B0B335180150F400A5FE74 /* grossini_blue.plist */,
+				17B0B3311801487300A5FE74 /* grossini.plist */,
+				17B0B3321801487300A5FE74 /* grossini.png */,
+				17B0B32F1801400300A5FE74 /* grossini_dance_atlas_nomipmap.png */,
+				17B0B313180135C400A5FE74 /* grossini_dance_01.png */,
+				17B0B314180135C400A5FE74 /* grossini_dance_02.png */,
+				17B0B315180135C400A5FE74 /* grossini_dance_03.png */,
+				17B0B316180135C400A5FE74 /* grossini_dance_04.png */,
+				17B0B317180135C400A5FE74 /* grossini_dance_05.png */,
+				17B0B318180135C400A5FE74 /* grossini_dance_06.png */,
+				17B0B319180135C400A5FE74 /* grossini_dance_07.png */,
+				17B0B31A180135C400A5FE74 /* grossini_dance_08.png */,
+				17B0B31B180135C400A5FE74 /* grossini_dance_09.png */,
+				17B0B31C180135C400A5FE74 /* grossini_dance_10.png */,
+				17B0B31D180135C400A5FE74 /* grossini_dance_11.png */,
+				17B0B31E180135C400A5FE74 /* grossini_dance_12.png */,
+				17B0B31F180135C400A5FE74 /* grossini_dance_13.png */,
+				17B0B320180135C400A5FE74 /* grossini_dance_14.png */,
 				17B0B06C1801353E00A5FE74 /* CloseNormal.png */,
 				17B0B06E1801353E00A5FE74 /* CloseSelected.png */,
 				17B0B0701801353E00A5FE74 /* Default.png */,
@@ -1620,6 +1686,28 @@
 				17B0B07F1801353E00A5FE74 /* Icon@2x.png in Resources */,
 				17B0B0811801353E00A5FE74 /* iTunesArtwork in Resources */,
 				17B0B1131801353F00A5FE74 /* ChangeLog in Resources */,
+				17B0B321180135C400A5FE74 /* grossini_dance_01.png in Resources */,
+				17B0B322180135C400A5FE74 /* grossini_dance_02.png in Resources */,
+				17B0B323180135C400A5FE74 /* grossini_dance_03.png in Resources */,
+				17B0B324180135C400A5FE74 /* grossini_dance_04.png in Resources */,
+				17B0B325180135C400A5FE74 /* grossini_dance_05.png in Resources */,
+				17B0B326180135C400A5FE74 /* grossini_dance_06.png in Resources */,
+				17B0B327180135C400A5FE74 /* grossini_dance_07.png in Resources */,
+				17B0B328180135C400A5FE74 /* grossini_dance_08.png in Resources */,
+				17B0B329180135C400A5FE74 /* grossini_dance_09.png in Resources */,
+				17B0B32A180135C400A5FE74 /* grossini_dance_10.png in Resources */,
+				17B0B32B180135C400A5FE74 /* grossini_dance_11.png in Resources */,
+				17B0B32C180135C400A5FE74 /* grossini_dance_12.png in Resources */,
+				17B0B32D180135C400A5FE74 /* grossini_dance_13.png in Resources */,
+				17B0B32E180135C400A5FE74 /* grossini_dance_14.png in Resources */,
+				17B0B3301801400300A5FE74 /* grossini_dance_atlas_nomipmap.png in Resources */,
+				17B0B3331801487400A5FE74 /* grossini.plist in Resources */,
+				17B0B3341801487400A5FE74 /* grossini.png in Resources */,
+				17B0B336180150F400A5FE74 /* grossini_blue.plist in Resources */,
+				17B0B3381801515000A5FE74 /* animations.plist in Resources */,
+				17B0B33A1801515A00A5FE74 /* grossini_blue.png in Resources */,
+				17B0B33D1801516700A5FE74 /* grossini_gray.plist in Resources */,
+				17B0B33E1801516700A5FE74 /* grossini_gray.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

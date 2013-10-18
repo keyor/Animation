@@ -28,51 +28,150 @@ bool HelloWorld::init()
     {
         return false;
     }
-
-    /////////////////////////////
-    // 2. add a menu item with "X" image, which is clicked to quit the program
-    //    you may modify it.
-
-    // add a "close" icon to exit the progress. it's an autorelease object
-    CCMenuItemImage *pCloseItem = CCMenuItemImage::create(
-                                        "CloseNormal.png",
-                                        "CloseSelected.png",
-                                        this,
-                                        menu_selector(HelloWorld::menuCloseCallback) );
-    pCloseItem->setPosition( ccp(CCDirector::sharedDirector()->getWinSize().width - 20, 20) );
-
-    // create menu, it's an autorelease object
-    CCMenu* pMenu = CCMenu::create(pCloseItem, NULL);
-    pMenu->setPosition( CCPointZero );
-    this->addChild(pMenu, 1);
-
-    /////////////////////////////
-    // 3. add your codes below...
-
-    // add a label shows "Hello World"
-    // create and initialize a label
-    CCLabelTTF* pLabel = CCLabelTTF::create("Hello World", "Thonburi", 34);
-
-    // ask director the window size
-    CCSize size = CCDirector::sharedDirector()->getWinSize();
-
-    // position the label on the center of the screen
-    pLabel->setPosition( ccp(size.width / 2, size.height - 20) );
-
-    // add the label as a child to this layer
-    this->addChild(pLabel, 1);
-
-    // add "HelloWorld" splash screen"
-    CCSprite* pSprite = CCSprite::create("HelloWorld.png");
-
-    // position the sprite on the center of the screen
-    pSprite->setPosition( ccp(size.width/2, size.height/2) );
-
-    // add the sprite as a child to this layer
-    this->addChild(pSprite, 0);
+    ///   步骤：  1 初始化精灵缓存加载plist文件   2创建精灵帧   3将精灵帧放到animation中4 然后封装animation成animate 5在 runAction 
     
+    ///////type1类型1111111111111111111
+
+    CCSize size=CCDirector::sharedDirector()->getWinSize();
+    CCSprite* sprite=CCSprite::create("grossini_dance_01.png");
+    
+    addChild(sprite);
+    sprite->setPosition(ccp(size.width/2,size.height/2));
+    //动画帧， 放到CCAnimation中
+    CCAnimation *animation=CCAnimation::create();///分配空间并初始化了 
+    for (int i=1; i<15; i++) {
+        CCString*fileName=CCString::createWithFormat("grossini_dance_%02d.png",i);
+        //创建一个精灵帧
+//        CCSize spriteSize=sprite->getContentSize();
+//        CCRect rect=CCRect(0,0,spriteSize.width,spriteSize.height);
+//        //做好一个精灵帧
+//        CCSpriteFrame*frame=CCSpriteFrame::create(fileName->getCString(), rect);
+//        ///将精灵帧加到animation中
+//        animation->addSpriteFrame(frame);
+        
+        ////渲染每一帧动画 耗性能 一帧帧加载
+        
+        //一句话代替
+        animation->addSpriteFrameWithFileName(fileName->getCString());
+    } 
+    animation->setDelayPerUnit(0.1f);
+    animation->setLoops(-1);//-1表示一直执行
+    ///将animation 封转成animate类
+    CCAnimate *animate=CCAnimate::create(animation);
+ 
+    sprite->runAction(animate);//执行这个动作
+    
+   
+    
+    
+    ////////////type2 类型22222222222  纹理图  （rec）85*121 判断好起点
+  
+    
+//    CCSize size=CCDirector::sharedDirector()->getWinSize();
+//    CCSprite* sprite=CCSprite::create();
+//     sprite->setPosition(ccp(size.width/2,size.height/2));
+//    addChild(sprite);
+//   
+//    
+//    CCAnimation *animation=CCAnimation::create();///创建一个animation容器
+//    animation->setDelayPerUnit(0.1f);///设定时间间隔
+//    animation->setLoops(-1);//-1表示一直执行
+//    
+//    
+//    CCTextureCache* cache=CCTextureCache::sharedTextureCache();
+//    CCTexture2D* texture=cache->addImage("grossini_dance_atlas_nomipmap.png");
+//    for (int i=0; i<5; i++) {
+//        
+//    
+//        CCRect rect=CCRect (85*i,0,85,121);
+//        //用纹理创建精灵帧
+////        CCSpriteFrame *frame=CCSpriteFrame::createWithTexture(texture, rect);
+////        animation->addSpriteFrame(frame);
+//        
+//        //替换以上两句
+//        animation->addSpriteFrameWithTexture(texture, rect);
+//       
+//
+//    }
+//    
+//    CCAnimate *animate=CCAnimate::create(animation);
+//    
+//    sprite->runAction(animate);//执行这个动作
+//
+    
+    ////////////////type33333333333333333333333333
+    
+//    CCSize size=CCDirector::sharedDirector()->getWinSize();
+//      CCSprite* sprite=CCSprite::create();
+//       sprite->setPosition(ccp(size.width/2,size.height/2));
+//   addChild(sprite);
+//    
+//    
+//     CCAnimation *animation=CCAnimation::create();///创建一个animation容器
+//    
+//    CCSpriteFrameCache*frameCache=CCSpriteFrameCache::sharedSpriteFrameCache();
+//    frameCache->addSpriteFramesWithFile("grossini.plist");
+// 
+//    for (int i =1; i<15;i++) {
+//        
+//        CCString *fileName=CCString::createWithFormat("grossini_dance_%02d.png",i);///为什么是%02d??????
+//        
+//        CCSpriteFrame*frame=frameCache->spriteFrameByName(fileName->getCString());
+//        animation->addSpriteFrame(frame);/
+//        
+//        
+//        
+//    }
+//    
+//    animation->setDelayPerUnit(0.1f);///设定时间间隔
+//       animation->setLoops(-1);//-1表示一直执行
+//    
+//    CCAnimationCache*animationCache=CCAnimationCache::sharedAnimationCache();
+//    animationCache->addAnimation(animation, "Z");
+//    
+//    CCAnimate*animate=CCAnimate::create(animationCache->animationByName("Z"));
+//    //或者
+////    CCAnimate*animate=CCAnimate::create(animation);
+//   sprite-> runAction(animate);
+//    
+    
+    
+    
+    
+    
+/////////////type444444444444444444444444444
+    
+    
+//    CCSize size=CCDirector::sharedDirector()->getWinSize();
+//    CCSprite* sprite=CCSprite::create();
+//    sprite->setPosition(ccp(size.width/2,size.height/2));
+//    addChild(sprite);
+//    
+//    
+//    CCAnimation *animation1=CCAnimation::create();///创建一个
+//    //图片加载到精灵缓存中
+//    
+//    CCSpriteFrameCache*spriteCache=CCSpriteFrameCache::sharedSpriteFrameCache();
+//    
+//    spriteCache->addSpriteFramesWithFile("grossini_blue.plist");
+//    spriteCache->addSpriteFramesWithFile("grossini_gray.plist");
+//    spriteCache->addSpriteFramesWithFile("grossini.plist");
+//    
+//    
+//    
+//    
+//    
+//    CCAnimationCache*animationCache=CCAnimationCache::sharedAnimationCache();
+//    animationCache->addAnimationsWithFile("animations.plist");
+//    
+//    CCAnimation *animation=animationCache->animationByName("dance_1");
+//    
+//    CCAnimate* animate=CCAnimate::create(animation);
+//    sprite->runAction(animate);
     return true;
 }
+
+
 
 void HelloWorld::menuCloseCallback(CCObject* pSender)
 {
